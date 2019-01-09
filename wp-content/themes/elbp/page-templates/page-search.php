@@ -140,8 +140,21 @@ if( isset($_REQUEST['organisation_search']) && $_REQUEST['organisation_search'] 
 // --- 
 
 $organisations = new WP_Query($args);
+// images to load on random for backgrond //
+$directory = get_template_directory()."/images/newImages"; // doesnt work using URLS!
+$images = glob($directory."/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+$images_root = array();
+
+foreach($images as $image) {
+	//echo $image;
+	$images_root[] = $image;
+}
+$randomImage = $images_root[array_rand($images_root)];
+$end = array_slice(explode('/', $randomImage), -1)[0];
+$actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
+
 ?>
-<section data-parallax="scroll" data-image-src="<?php echo get_theme_info('theme_url').'/images/el_cityscape_v.jpg'; ?>" class="image_header background_cover">
+<section data-parallax="scroll" data-image-src="<?php echo $actualurl; ?>" class="image_header background_cover">
 	<div class="table_outer overlay_background">
 		<div class="table_inner_mid">
 			<div class="container">
@@ -186,8 +199,14 @@ $organisations = new WP_Query($args);
 							
 							?>							
 							<select name="keyword_search[]" placeholder="Choose keywords..." class="select2" multiple="multiple">
-								<?php foreach($json_keywords as $kw): ?>
-								<option value="<?php echo $kw['id']; ?>" <?php if(in_array($kw['id'], @$_REQUEST['keyword_search'])): ?> selected="selected"<?php endif; ?>><?php echo $kw['text']; ?></option>
+								<?php foreach($json_keywords as $kw): 
+									if(@$_REQUEST['keyword_search']) {
+										$item = @$_REQUEST['keyword_search'];
+									}else {
+										$item = array();
+									}
+									?>
+								<option value="<?php echo $kw['id']; ?>" <?php if(in_array($kw['id'], $item)): ?> selected="selected"<?php endif; ?>><?php echo $kw['text']; ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>						
@@ -209,10 +228,16 @@ $organisations = new WP_Query($args);
 										'text'	=>	$area->name
 									);
 								}
+
+								if(@$_REQUEST['locational_search']) {
+									$item = @$_REQUEST['locational_search'];
+								}else {
+									$item = array();
+								}
 								?>
 								<select name="locational_search[]" placeholder="Choose location..." class="selectLocation" multiple="multiple">
 									<?php foreach($json_keywords_area as $area): ?>
-										<option value="<?php echo $area['id']; ?>" <?php if(in_array($area['id'], @$_REQUEST['locational_search'])): ?> selected="selected"<?php endif; ?>><?php echo $area['text']; ?></option>
+										<option value="<?php echo $area['id']; ?>" <?php if(in_array($area['id'], $item)): ?> selected="selected"<?php endif; ?>><?php echo $area['text']; ?></option>
 									<?php endforeach; ?>
 								</select>
 								
@@ -229,8 +254,14 @@ $organisations = new WP_Query($args);
 								    'hide_empty' => false,
 								) );
 								foreach($terms as $t) {
+
+									if(@$_REQUEST['organisations_support']) {
+										$item = @$_REQUEST['organisations_support'];
+									}else {
+										$item = array();
+									}
 									?>
-									<option value="<?php echo $t->term_id; ?>" <?php if(in_array($t->term_id, @$_REQUEST['organisations_support'])): ?> selected="selected" <?php endif; ?>><?php echo $t->name; ?></option>
+									<option value="<?php echo $t->term_id; ?>" <?php if(in_array($t->term_id, $item)): ?> selected="selected" <?php endif; ?>><?php echo $t->name; ?></option>
 								<?php 
 									
 									}
@@ -254,8 +285,13 @@ $organisations = new WP_Query($args);
 								    'hide_empty' => false,
 								) );
 								foreach($terms as $t) {
+									if(@$_REQUEST['support_topics']) {
+										$item = @$_REQUEST['support_topics'];
+									}else {
+										$item = array();
+									}
 									?>
-									<option value="<?php echo $t->term_id; ?>"  <?php if(in_array($t->term_id, @$_REQUEST['support_topics'])): ?> selected="selected" <?php endif; ?>><?php echo $t->name; ?></option>
+									<option value="<?php echo $t->term_id; ?>"  <?php if(in_array($t->term_id, $item)): ?> selected="selected" <?php endif; ?>><?php echo $t->name; ?></option>
 								<?php 
 									}
 								?>

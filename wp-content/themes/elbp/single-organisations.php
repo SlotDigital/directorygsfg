@@ -162,9 +162,10 @@ if(has_post_thumbnail()) {
 				<?php endif; ?>
 				
 				<div class="modular_bkd">
-					<h2>Directional Map</h2>
+					<!-- <h2>Directional Map</h2> -->
+					<h2>Address</h2>
 					<span><i></i>Address: <p><?php echo $location_address; ?></p></span>
-					<div id="organisation_map" style="height:300px;"></div>
+					<!-- <div id="organisation_map" style="height:300px;"></div> -->
 				</div>
 			</div>
 		</div>

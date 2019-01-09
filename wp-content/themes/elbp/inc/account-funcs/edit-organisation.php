@@ -250,7 +250,8 @@ if( isset($_REQUEST['action']) && $_REQUEST['action'] == 'edit_org' ) {
 				
 				<div class="modular_bkd">
 				   <div class="col-sm-12 grp">
-				   	<label class="control-label">Address</label>
+				   <!-- take this out until further notice -->
+				   	<!-- <label class="control-label">Address</label> -->
 				   
 				   <?php 
 				      
@@ -268,7 +269,8 @@ if( isset($_REQUEST['action']) && $_REQUEST['action'] == 'edit_org' ) {
 				   	    $location_zoom = '';
 				   	}
 				   	?>
-        		   	<div style="height:300px;" id="map-canvas_event"></div>
+        		   	<!-- take this out until further notice -->
+        		   	<!-- <div style="height:300px;" id="map-canvas_event"></div> -->
         		   	<div id="panel">
 	    		   	    <label>Organisation Location</label>
         		   	  <input id="address" type="text" name="organisation_location[address]" value="<?php echo $location_address;?>" class="form-control" onkeyup="codeAddress();"  >

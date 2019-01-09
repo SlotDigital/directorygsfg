@@ -7,8 +7,21 @@
  * @since East London Business Portal 1.0
  */
 get_header(); ?>
+<?php 
+// images to load on random for backgrond //
+$directory = get_template_directory()."/images/newImages"; // doesnt work using URLS!
+$images = glob($directory."/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+$images_root = array();
 
-<section class="main_home_search background_cover" style="background-image:url(<?php echo get_theme_info('theme_url');?>/images/el_cityscape_v.jpg);">
+foreach($images as $image) {
+	//echo $image;
+	$images_root[] = $image;
+}
+$randomImage = $images_root[array_rand($images_root)];
+$end = array_slice(explode('/', $randomImage), -1)[0];
+$actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
+?>
+<section class="main_home_search background_cover" style="background-image:url(<?php echo $actualurl;?>);">
 	<div class="table_outer home_inner_background">
 		<div class="table_inner_mid">
 			<div class="container">
@@ -69,8 +82,14 @@ get_header(); ?>
 								}
 								?>
 								<select name="locational_search[]" placeholder="Choose location..." class="selectLocation" multiple="multiple">
-									<?php foreach($json_keywords_area as $area): ?>
-										<option value="<?php echo $area['id']; ?>" <?php if(in_array($area['id'], @$_REQUEST['locational_search'])): ?> selected="selected"<?php endif; ?>><?php echo $area['text']; ?></option>
+									<?php foreach($json_keywords_area as $area): 
+										if(@$_REQUEST['locational_search']) {
+											$item = @$_REQUEST['locational_search'];
+										}else {
+											$item = array();
+										}
+										?>
+										<option value="<?php echo $area['id']; ?>" <?php if(in_array($area['id'], $item)): ?> selected="selected"<?php endif; ?>><?php echo $area['text']; ?></option>
 									<?php endforeach; ?>
 								</select>
 								

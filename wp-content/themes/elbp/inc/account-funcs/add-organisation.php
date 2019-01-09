@@ -135,7 +135,8 @@ if( isset($_REQUEST['action']) && $_REQUEST['action'] == 'add_org' ) {
 			<div class="col-sm-6">
 				<div class="modular_bkd">
 				   <div class="col-sm-12 grp">
-				   	<label class="control-label">Address</label>
+				   <!-- take this out until further notice -->
+				   	<!-- <label class="control-label">Address</label> -->
 				    <?php 
 				    
 			   		 global $post;
@@ -144,7 +145,8 @@ if( isset($_REQUEST['action']) && $_REQUEST['action'] == 'add_org' ) {
 					$location_lng = '0.2500';
 					$location_zoom = '13';
 					?>
-        		   	<div style="height:300px;" id="map-canvas_event"></div>
+					<!-- take this out until further notice -->
+        		   	<!-- <div style="height:300px;" id="map-canvas_event"></div> -->
         		   	<div id="panel">
 	    		   	    <label>Organisation Location</label>
         		   	  <input id="address" type="text" name="organisation_location[address]" value="<?php echo $location_address;?>" class="form-control" onkeyup="codeAddress();"  >
