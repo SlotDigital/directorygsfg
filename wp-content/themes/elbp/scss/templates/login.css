@@ -1,0 +1,92 @@
+/*
+Error: Undefined mixin 'transition'.
+        on line 44 of /var/www/vhosts/dev.directory.getsetforgrowth.com/httpdocs/wp-content/themes/elbp/scss/templates/login.scss, in `transition'
+        from line 44 of /var/www/vhosts/dev.directory.getsetforgrowth.com/httpdocs/wp-content/themes/elbp/scss/templates/login.scss
+
+39: 	    box-shadow: none;
+40: 	    text-transform: uppercase;
+41: 	    font-family: 'Oxygen';
+42: 	    font-weight: bold;
+43: 	    letter-spacing: 1px;
+44: 	    @include transition(0.25);
+45: 	    &:hover {
+46: 		    background-color: #9da000;
+47: 	    }
+48: 	}
+49: 
+
+Backtrace:
+/var/www/vhosts/dev.directory.getsetforgrowth.com/httpdocs/wp-content/themes/elbp/scss/templates/login.scss:44:in `transition'
+/var/www/vhosts/dev.directory.getsetforgrowth.com/httpdocs/wp-content/themes/elbp/scss/templates/login.scss:44
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:351:in `visit_mixin'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:98:in `with_mixin'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:115:in `with_frame'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:98:in `with_mixin'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:79:in `with_base'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:115:in `with_frame'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:79:in `with_base'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:433:in `visit_rule'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:433:in `visit_rule'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:79:in `with_base'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:115:in `with_frame'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:79:in `with_base'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:433:in `visit_rule'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:433:in `visit_rule'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:79:in `with_base'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:115:in `with_frame'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/stack.rb:79:in `with_base'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:169:in `visit_children'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:8:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/plugin/compiler.rb:209:in `each'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/plugin.rb:109:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/plugin.rb:109:in `method_missing'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/exec/base.rb:52:in `parse'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/../lib/sass/exec/base.rb:19:in `parse!'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.4.22/bin/sass:13
+/usr/bin/sass:22:in `load'
+/usr/bin/sass:22
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'transition'.\A         on line 44 of /var/www/vhosts/dev.directory.getsetforgrowth.com/httpdocs/wp-content/themes/elbp/scss/templates/login.scss, in `transition'\A         from line 44 of /var/www/vhosts/dev.directory.getsetforgrowth.com/httpdocs/wp-content/themes/elbp/scss/templates/login.scss\A \A 39: 	    box-shadow: none;\A 40: 	    text-transform: uppercase;\A 41: 	    font-family: 'Oxygen';\A 42: 	    font-weight: bold;\A 43: 	    letter-spacing: 1px;\A 44: 	    @include transition(0.25);\A 45: 	    &:hover {\A 46: 		    background-color: #9da000;\A 47: 	    }\A 48: 	}\A 49: "; }

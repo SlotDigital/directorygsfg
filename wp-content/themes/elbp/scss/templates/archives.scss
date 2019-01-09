@@ -1,0 +1,50 @@
+section.archives_container {
+	    padding: 60px 0px;
+		background-color: #fff;
+	.container {
+		
+	}
+}
+.page_intro_grey {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 20px;
+    .archive_content {
+	    h1 {
+		    color: $red;
+		    margin-bottom: 5px !important;
+	    }
+    }
+}
+.archive_content {
+	text-align: left;
+	color: #000;
+	
+}
+.page-template-page-machines {
+	section.heading_image {
+	    height: 150px;
+	    position: relative;
+	    .breadcrumbs:before {
+		    height: 0px !important;
+	    }
+	}
+}
+.page-template-page-accessories {
+	section.heading_image {
+	    height: 150px;
+	    position: relative;
+	    .breadcrumbs:before {
+		    height: 0px !important;
+	    }
+	}
+}
+.page-template-page-coffees {
+	section.heading_image {
+	    height: 150px;
+	    position: relative;
+	    .breadcrumbs:before {
+		    height: 0px !important;
+	    }
+	}
+}

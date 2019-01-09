@@ -1,0 +1,182 @@
+/* Nav sticky */
+header.fixed {
+    position: fixed;
+    z-index: 15;
+    @include transition($duration);
+}
+.button {
+	.dropdown-menu {
+    	position: absolute;
+    	top: 100%;
+    	left: -120px;
+    	li {
+	    	display: inline-block;
+			width: 100%;
+    	}
+    }
+}
+nav .utils_mobile div a {
+	color: #fff;
+}
+button.btn.btn-primary.dropdown-toggle {
+	background-color: #005357;
+}
+header {
+    position: absolute;
+    margin-top: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #fff;
+    @include transition($duration);
+		.loggedin   {
+		    li {
+				
+				    a {
+					   color: #058e98 !important;
+				    	&:after {
+							background-color: #005357;
+   							 content: "";
+   							 height: 2px;
+   							 bottom: 1px;
+   							 left: 10%;
+   							 position: absolute;
+   							 width: 0px;
+   							 transition: ease all .35s;
+						}
+						&:hover {
+							text-decoration: none;
+							&:after {
+								width: 80%;
+								transition: ease all .35s;
+							}
+						}
+				    }
+				
+			}
+		}
+	    .menu {
+		    list-style: none;
+		    margin: 0px;
+		    padding: 0px;
+		    text-align: right;
+		    li {
+			    display: inline-block;
+			    &:last-child {
+				    a {
+					    color: #fff;
+				    	&:after {
+				    	 display: none;
+				    	}
+				    }
+				}
+				&:nth-child(3) {
+				    a {
+				    	&:after {
+				    	 display: none;
+				    	}
+				    }
+				}
+			    a {
+					color: #058e98;
+				    padding: 10px 13px;
+				    font-weight: 500;
+				    position: relative;
+
+					&:after {
+						background-color: #005357;
+   						 content: "";
+   						 height: 2px;
+   						 bottom: 1px;
+   						 left: 10%;
+   						 position: absolute;
+   						 width: 0px;
+   						 transition: ease all .35s;
+					}
+					&:hover {
+						text-decoration: none;
+						&:after {
+							width: 80%;
+							transition: ease all .35s;
+						}
+					}
+			    }
+			    .login_button {
+				    border: 2px solid #058e98;
+				    border-radius: 5px;
+			    }
+			    .register_button {
+				    border-radius: 5px;
+				    padding: 12px 13px;
+				    background-color: #005357;
+				}
+		    }
+	    }
+	.main_logo {
+		    width: 115px;
+			margin-right: 20px;
+	}
+	a.contact_header {
+  	  color: #058e98;
+  	    @include transition(0.25);
+		  &:hover {
+		     color: #005357 !important;
+		     text-decoration: none;
+		 }
+  	  i {
+	   margin: 0px 3px;
+	   font-size: 17px;
+  	  }
+	}
+}
+/* Mobile Styling */
+.mob_menu {
+	float: right;
+}
+nav {
+	.mobile_logo {
+		width: 130px;
+	}
+	.mm-navbar {
+	    background-color: #058e98 !important;
+	}
+	i {
+	    font-size: 30px;
+	    color: #fff;
+	    padding: 0px 30px;
+	}
+	.utils_mobile div {
+    	text-align: center;
+    	background-color: #9da000;
+    	color: #fff;
+    	text-transform: uppercase;
+    	padding: 20px;
+    	font-family: 'Oxygen';
+    	letter-spacing: 1px;
+    	&:nth-child(2) {
+	    	background-color: #005357;
+    	}
+	}
+}
+.utils_mobile {
+	&:before {
+		height: 0px !important;
+	}
+}
+.mm-navbar-size-3 {
+    height: 88px;
+    padding: 4px !important;
+}
+.mm-hasnavbar-top-3 .mm-panels, .mm-navbar-top-4 {
+    top: 88px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 34px;
+    height: 4px;
+    background-color: #058e98 !important;
+    border-radius: 0px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}

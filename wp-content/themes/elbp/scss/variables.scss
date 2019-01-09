@@ -1,0 +1,41 @@
+/* Variables */
+
+
+/* colours */
+
+$white: #fff;
+$red: #e9292a;
+$medred: #b00505;
+$dred:#980000;
+$grey:#404045;
+$lgrey: #989696;
+
+
+/* Grad */
+
+$old: #980000; /* Old browsers */
+$firefox:-moz-radial-gradient(center, ellipse cover,  #980000 0%, #b00505 100%); /* FF3.6-15 */
+$chrome:-webkit-radial-gradient(center, ellipse cover,  #980000 0%,#b00505 100%); /* Chrome10-25,Safari5.1-6 */
+$saf:radial-gradient(ellipse at center,  #980000 0%,#b00505 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* grad */
+
+@mixin background($grad) {
+ background: $chrome;
+ background: $firefox;
+ background: $old;
+ background: $saf;
+}
+
+$stan: ease all 0.3s;
+@mixin transition($duration) {
+    -webkit-transition: $stan;
+    -moz-transition: $stan;
+    -ms-transition: $stan;
+    -o-transition: $stan;
+    transition: $stan;
+}
+
+/* fonts */
+$font_black: 'prox_black';
+
+

@@ -1,0 +1,182 @@
+section.account {
+  height: 100vh;
+  position: relative; }
+  section.account .row-no-padding .sidebar_cont {
+    position: relative; }
+  section.account .main-content-dashboard {
+    padding: 100px 0px 0px;
+    position: relative;
+    box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
+    background-color: #F5F5F0; }
+    section.account .main-content-dashboard .dashboard_image {
+      height: 100%;
+      position: relative; }
+  section.account .inner_background {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  section.account .sidebar {
+    text-align: center;
+    background-color: #058e98;
+    position: relative;
+    padding: 70px 0px 0px; }
+    section.account .sidebar a.btn.btn-primary {
+      background-color: #9da000;
+      border: none;
+      font-size: 16px;
+      padding: 11px 30px;
+      width: 70%; }
+  section.account .nav {
+    position: fixed;
+    width: 25%;
+    top: 75px; }
+    section.account .nav li a {
+      color: #fff;
+      font-size: 16px;
+      padding: 30px 0px 30px 120px;
+      text-align: left; }
+      section.account .nav li a:hover {
+        background-color: #005357;
+        border-left: 3px solid #fece38;
+        color: #fece38; }
+      section.account .nav li a:focus {
+        background-color: #005357;
+        border-left: 3px solid #fece38;
+        color: #fece38; }
+      section.account .nav li a:active {
+        background-color: #005357;
+        border-left: 3px solid #fece38;
+        color: #fece38; }
+    section.account .nav .current-menu-item a {
+      background-color: #005357;
+      color: #fece38;
+      border-left: 3px solid #fece38; }
+
+.welcome {
+  padding: 50px 0px; }
+  .welcome .more_info {
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0px; }
+
+.dashboard_image h2 {
+  color: #fff;
+  font-size: 36px; }
+
+.panel-body .caption {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold; }
+.panel-body text[Attributes Style] {
+  fill: #fff;
+  display: none; }
+.panel-body text {
+  display: none; }
+.panel-body tspan {
+  fill: #fff; }
+.panel-body svg path:nth-child(1) {
+  fill: #fff; }
+
+.result {
+  position: relative;
+  top: -74%;
+  color: #fff;
+  font-size: 70px; }
+
+ul.nav li:first-child a:before {
+  content: '\f2b3';
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  color: #fff;
+  font-family: "Ionicons";
+  top: 50%;
+  z-index: 10;
+  margin-top: -23px;
+  font-size: 30px; }
+
+ul.nav li:nth-child(2) a:before {
+  content: '\f412';
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  color: #fff;
+  font-family: "Ionicons";
+  top: 50%;
+  z-index: 10;
+  margin-top: -23px;
+  font-size: 30px; }
+
+ul.nav li:nth-child(3) a:before {
+  content: '\f472';
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  color: #fff;
+  font-family: "Ionicons";
+  top: 50%;
+  z-index: 10;
+  margin-top: -23px;
+  font-size: 30px; }
+
+ul.nav li:nth-child(4) a:before {
+  content: '\f3ee';
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  color: #fff;
+  font-family: "Ionicons";
+  top: 50%;
+  z-index: 10;
+  margin-top: -23px;
+  font-size: 30px; }
+
+ul.nav li:nth-child(5) a:before {
+  content: '\f4d4';
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  color: #fff;
+  font-family: "Ionicons";
+  top: 50%;
+  z-index: 10;
+  margin-top: -23px;
+  font-size: 30px; }
+
+.dash_feedback {
+  padding: 25px 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center; }
+  .dash_feedback a {
+    margin: 0px !important;
+    display: inline-block !important; }
+
+.page-template-page-my-account .main-content-dashboard {
+  padding: 70px 0px 0px !important; }
+.page-template-page-my-account .sidebar {
+  height: auto !important; }
+.page-template-page-my-account .dashboard_image {
+  height: 100vh !important;
+  position: relative; }
+
+.subscriber_menu li:first-child a:before {
+  content: '\f2b3';
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  color: #fff;
+  font-family: "Ionicons";
+  top: 50%;
+  z-index: 10;
+  margin-top: -23px;
+  font-size: 30px; }
+.subscriber_menu li:nth-child(2) a:before {
+  content: "" !important; }
+.subscriber_menu li:nth-child(3) a:before {
+  content: " " !important; }
+.subscriber_menu li:nth-child(4) a:before {
+  content: " " !important; }
+.subscriber_menu li:nth-child(5) a:before {
+  content: " " !important; }
+
+/*# sourceMappingURL=account_home.css.map */

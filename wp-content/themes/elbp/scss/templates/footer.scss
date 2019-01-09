@@ -1,0 +1,16 @@
+footer.main_footer {
+    background-color: #fff;
+    padding: 10px;
+    h3 {
+	    font-size: 18px;
+    }
+    a {
+	    color: #058e98;
+	    font-size: 12px;
+	      @include transition(0.25);
+		  &:hover {
+		     color: #005357 !important;
+		     text-decoration: none;
+		 }
+    }
+}

@@ -1,0 +1,158 @@
+.main_home_search {
+	height: 80vh;
+	width: 100%;
+	form#searchform h1 {
+	    color: #fff;
+	    padding: 30px 0px;
+	    font-family: 'Oxygen';
+	}
+	.home_inner_background {
+		background-color: rgba(16, 28, 29, 0.4);
+		.searchform {
+			.form-control {
+				width: auto;
+			}
+		}
+	}
+	input#searchsubmit {
+		background-color: #b1b966;
+    	border: none;
+    	color: #fff;
+    	padding: 0px 30px;
+    	height: 50px;
+    	box-shadow: none;
+    	text-transform: uppercase;
+    	font-family: 'Oxygen';
+    	font-weight: bold;
+    	width: 100%;
+    	display: block;
+    	letter-spacing: 1px;
+    	transition:ease all .25s;
+    				-moz-transition:ease all .25s;
+			-webkit-transition:ease all .25s;
+    	&:hover {
+	    	background-color: #9da000;
+			transition:ease all .25s;
+			-moz-transition:ease all .25s;
+			-webkit-transition:ease all .25s;
+    	}
+	}
+	input#s {
+	    background-color: rgba(255, 255, 255, 0.8);
+	    border: none;
+	    box-shadow: none;
+	    padding: 10px;
+	    height: 50px;
+	    border-radius: 6px;
+	    font-weight: bold;
+	    width: 100%;
+	    &::-webkit-input-placeholder{
+		   color: #058e98; 
+	    }
+	    &:-moz-placeholder{
+		   color: #058e98; 
+	    }
+	    &::-moz-input-placeholder{
+		   color: #058e98; 
+	    }
+	    &:-ms-input-placeholder{
+		   color: #058e98; 
+	    }
+	}
+	select {
+	    background-color: rgba(255, 255, 255, 0.8);
+	    border: none;
+	    height: 50px;
+	    color: #058e98;
+	    font-weight: bold;
+	}
+	input[type="text"] {
+		color: #058e98 !important;
+	}
+	input[type="email"] {
+		color: #058e98 !important;
+	}
+	.select_home {
+		float: left !important;
+		.btn-group {
+			width:100%!important;
+		}
+		 .btn {
+    	padding: 15px;
+		}
+		&.in {
+		&:before {
+		    content: 'in';
+		    position: absolute;
+		    left: -8px;
+		    vertical-align: middle;
+		    top: 50%;
+		    margin-top: -10px;
+		    color: #fff;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		}
+		}
+	}
+	button.btn.dropdown-toggle.btn-default {
+	    background-color: rgba(255, 255, 255, 0.8);
+	    border: none;
+	    color: #058e98;
+	    font-weight: bold;
+	    box-shadow: none;
+	}
+	.dropdown-menu {
+			background-color: rgba(255, 255, 255, 0.8);
+	}
+	.dropdown-menu.open {
+
+		.popover-title {
+			background-color: #058e98;
+			border: none;
+			color: #fff;
+		}
+		li {
+			a {
+				 color: #058e98;
+   				 font-weight: bold;
+   				 padding: 9px 20px;
+				&:hover {
+					span {
+						color: #005357;
+					}
+				}
+				&:active {
+					span {
+						color: #005357;
+					}
+				}
+				&:focus {
+					span {
+						color: #005357;
+					}
+				}
+			}
+			.selected {
+				span {
+					color: #005357;
+				}
+			}
+		}
+	}
+}
+.utils_mobile {
+    padding: 0px !important;
+}
+.parallax-mirror {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+.quicksearch_page .filter_search {
+    display: block !important;
+    position: relative;
+    width: 100%;
+    top: 0px;
+}

@@ -1,0 +1,231 @@
+.account {
+	.modular_bkd {
+		 background-color: #fff;
+   		 padding: 30px 12px;
+   		 position: relative;
+   		 margin-bottom: 20px;
+   		 box-shadow: 0px 0px 3px rgba(0, 0, 0, .06);
+   		 overflow: hidden;
+   		 border-bottom: 3px solid #fece38;
+	}
+	.modular_head {
+   		 padding: 0px;
+   		 position: relative;
+	}
+	input.form-control {
+	    background-color: #f5f5f0;
+	    border: 0px;
+	    box-shadow: none;
+	    height: 40px;
+	}
+	h2.account-heading {
+		color: #005357;
+    	padding: 0px 20px 20px;
+	    b {
+		    color: #058e98;
+	    }
+	}
+	label.control-label {
+	    padding: 5px 0px;
+	    font-size: 12px;
+	    color: #a5a5a5;
+	    font-weight: normal;
+	}
+	.grp {
+		margin-bottom: 20px;
+	}
+	div#panel  {
+		label {
+			padding: 5px 0px;
+	    	font-size: 12px;
+	    	color: #a5a5a5;
+	    	font-weight: normal;
+		}
+	}
+	button:not(.dropdown-toggle) {
+		background-color: #9da000;
+		border: 0px;
+	}
+	.nav.fixed {
+		width:25%;
+   		 top: 70px;
+   		 -webkit-transition: ease all 0.3s;
+   		 -moz-transition: ease all 0.3s;
+   		 -ms-transition: ease all 0.3s;
+   		 -o-transition: ease all 0.3s;
+   		 transition: ease all 0.3s;
+   		 position: fixed;
+	}
+	small.help-block {
+	    color: #C23B22;
+	}
+}
+.main-content.main-content-dashboard {
+    min-height: 1000px;
+}
+.page-template-page-my-account {
+	.main-content.main-content-dashboard {
+	    min-height: auto !important;
+	}
+}
+.main_form_area [class*="col-"] {
+	padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+// REGISTRATION PAGE 
+.register_frm {
+	.popover-title {
+	    background-color: #058e98 !important;
+	    border: none;
+	    color: #fff;
+	}
+	button.btn.dropdown-toggle.btn-default {
+	    background-color: rgba(255, 255, 255, 0.8);
+	    border: 1px solid #eee;
+	    color: #058e98;
+	    font-weight: bold;
+	    box-shadow: none;
+	        padding: 15px 20px;
+	}
+	label {
+	    color: #058e98;
+	}
+	.btn-group.bootstrap-select.form-control {
+	    height: 100%;
+	    position: relative;
+	}
+	input[type="email"] {
+	    color: #fff !important;
+	}
+	input[type="text"] {
+	    color: #fff !important;
+	}
+	.org_reg_cont {
+	    border-top: 1px solid #eee;
+	    padding: 15px 0px;
+	}
+
+	.button_register {
+	    background-color: #b1b966;
+	    border: 0px;
+	    display: inline-block;
+	    padding: 15px 20px !important;
+	    width: 100%;
+	    	    @include transition(0.25);
+	    &:hover {
+		    background-color: #9da000;
+	    }
+	     &:focus {
+		    background-color: #9da000;
+	    }
+	     &:active {
+		    background-color: #9da000;
+	    }
+	}
+}
+.reg_message {
+    color: #005357;
+    padding: 0px 10px 25px !important;
+    display: inline-block;
+}
+.reset_message {
+	    color: #005357;
+    padding: 0px 10px 25px !important;
+    display: inline-block;
+}
+#forgot-form {
+	a.btn.btn-default.btn-lg {
+		padding: 15px 20px !important;
+	}
+	button#forgot-button {
+	    background-color: #b1b966;
+	    border: 0px;
+	    display: inline-block;
+	    padding: 15px 20px !important;
+	     @include transition(0.25);
+		 &:hover {
+		    background-color: #9da000;
+	    }
+	}
+}
+// change password //
+.general_fw_button {
+	background-color: #b1b966 !important;
+	 border: 0px !important;
+	 display: inline-block;
+	 padding: 15px 20px !important;
+	  @include transition(0.25);
+	  &:hover {
+	     background-color: #9da000 !important;
+	 }
+}
+.change_pass {
+	.container-fluid {
+		height: 100%;
+	}
+	& [class*="col-"] {
+		padding: 0px 15px !important;
+	}
+	input.form-control {
+	     background-color: transparent;
+	    border: 0px;
+	    box-shadow: none;
+	    height: auto; 
+	}
+	.login-container {
+	    margin-top: -80px;
+	    text-align: center;
+	    background-color: #fff;
+	    border-radius: 4px;
+	    padding: 50px 40px !important;
+	    margin-bottom: 40px;
+	}
+}
+
+// opportunities //
+
+.add_new { 
+	background-color: #b1b966  !important;
+    padding: 10px 15px  !important;
+    color: #fff  !important;
+    border: none  !important;
+      @include transition(0.25);
+	  &:hover {
+	     background-color: #9da000 !important;
+	 }
+ }
+.add_new_bar {
+	padding: 10px 0px;
+}
+.general_fw_button {
+    text-align: center !important;
+    &:hover {
+	    color: #fff !important;
+    }
+}// 
+
+.opportunity_table {
+	thead {
+		tr {
+			th{
+				width: 100%;
+			}
+		}
+	}
+	th {
+	    background-color: #058e98;
+	    color: #fff;
+	    padding: 20px 20px !important;
+	    border-radius: 10px 10px 0px 0px;
+	}
+	td {	
+		padding: 20px !important;
+		vertical-align: middle;
+		a {
+			color: #058e98 !important;
+		}
+		a.btn.btn-primary.add_new {
+		    color: #fff !important;
+		}
+	}	
+}
