@@ -44,26 +44,26 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<!--<div class="col-sm-4">
 					<div class="footer_block">
 						<h3>Location Searches</h3>
 						<ul class="list-unstyled">
 						<?php
-  						    $terms = get_terms( array(
-							    'taxonomy' => 'organisations_locations',
-							    'hide_empty' => false,
-							    'number'=>10
-							) );
-  						    $index = 0;
-  						    foreach($terms as $term){
-  						        
-  						        echo '<li><a href="'.home_url().'/organisation-search/?organisation_search=&organisations_locations[]='.$term->term_id.'">'.$term->name.'</a></li>';
-  						      
-  						    }
+  						//    $terms = get_terms( array(
+						//	    'taxonomy' => 'organisations_locations',
+						//	    'hide_empty' => false,
+						//	    'number'=>10
+						//	) );
+  						//    $index = 0;
+  						//    foreach($terms as $term){
+  						//        
+  						//        echo '<li><a href="'.home_url().'/organisation-search/?organisation_search=&organisations_locations[]='.$term->term_id.'">'.$term->name.'</a></li>';
+  						//      
+  						//    }
   						?>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="single_blocks col-sm-3">
 				<div class="col-sm-3">
