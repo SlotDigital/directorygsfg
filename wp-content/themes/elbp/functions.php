@@ -39,6 +39,38 @@ require(ELBP_INC.'user-functions.php');
 require(ELBP_INC.'import-users-orgs.php');
 require(ELBP_INC.'register_func.php');
 
+// to identify the exact time when a user logged in
+add_action( 'wp_login', 'add_login_time' );
+function add_login_time( $user_login ) {
+    global $wpdb;
+    $user_id = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->users WHERE user_login = %s", $user_login ) );
+    update_user_meta( $user_id, 'last_login', current_time('mysql') );
+}
+
+// Add a new column to an admin list table
+add_filter( 'manage_users_columns', 'add_last_login_column' );
+function add_last_login_column( $columns ) {
+    $columns['last_login'] = __( 'Last login', 'last_login' );
+    return $columns;
+}
+
+// Contents of the new admin list table column
+add_action( 'manage_users_custom_column',  'add_last_login_column_value', 10, 3 );
+function add_last_login_column_value( $value, $column_name, $user_id ) {
+    $meta = get_user_meta( $user_id, 'last_login', true );
+    if ( 'last_login' == $column_name && $meta ) {
+        return date_i18n( 
+            sprintf(
+                '%s - %s',
+                get_option( 'date_format' ),
+                get_option( 'time_format' )
+            ),
+            strtotime( $meta ),
+            get_option( 'gmt_offset' )
+        );
+    }
+    return $value;
+}
 
 /* Web user Options Begin */
 
