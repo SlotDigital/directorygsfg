@@ -41,9 +41,10 @@
 			<div class="container-fluid">
 				<div class="row Aligner">
 					<div class="col-sm-6 col-xs-10">
-						<a href="<?php echo home_url();?>"><img class="main_logo" src="<?php echo get_theme_info('theme_url');?>/images/svg/elbp-logo.svg" class="logo" alt="" width="210"></a>
+						<a href="<?php echo home_url();?>"><img class="main_logo" src="<?php echo get_theme_info('theme_url');?>/images/svg/GrowSmart-logo.svg" class="logo" alt="" width="210"></a>
+						<!--
 						<a class="contact_header" target="blank" href="tel:<?php echo ELBP_PHONE;?>"><i class="ion-ios-telephone-outline"></i><div class="hidden-sm hidden-xs inline"><?php echo ELBP_PHONE;?></div></a>
-						<a class="contact_header" target="blank" href="mailto:<?php echo antispambot(ELBP_EMAIL);?>"><i class="ion-android-drafts"></i><div class="hidden-sm hidden-xs inline">Email Us</div></a>
+						<a class="contact_header" target="blank" href="mailto:<?php echo antispambot(ELBP_EMAIL);?>"><i class="ion-android-drafts"></i><div class="hidden-sm hidden-xs inline">Email Us</div></a> -->
 					</div>
 					<div class="col-lg-offset-3 col-lg-5 col-sm-6 col-xs-2">
 						<ul class="menu list-unstyled nav_menu_top <?php if(is_user_logged_in()){ echo 'loggedin';}?>">
@@ -64,8 +65,8 @@
 							
 								wp_nav_menu($menu_args); 
 							?>
-							<?php if(!is_user_logged_in()){?><li class="hidden-sm hidden-xs"><a href="<?php echo home_url().'/login';?>" class="login_button">Login</a></li>
-							<li class="hidden-sm hidden-xs"><a href="<?php echo home_url().'/register';?>" class="register_button">Register</a></li>	<?php } else { ?>
+							<?php if(!is_user_logged_in()){?><li class="hidden-sm hidden-xs"><a href="<?php echo home_url().'/login';?>" class="login_button">Partner Login</a></li>
+							<li class="hidden"><a href="<?php echo home_url().'/register';?>" class="register_button">Register</a></li>	<?php } else { ?>
 								<li class="button logged-in">
 								<div class="btn-group">
 									<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i> <i class="fa fa-caret-down"></i></button>

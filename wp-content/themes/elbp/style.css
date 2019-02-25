@@ -8288,7 +8288,7 @@ header .menu li .register_button {
   background-color: #005357;
 }
 header .main_logo {
-  width: 115px;
+  width: 175px;
   margin-right: 20px;
 }
 header a.contact_header {
@@ -8355,7 +8355,7 @@ nav .utils_mobile div:nth-child(2) {
   transition-timing-function: ease;
 }
 .main_home_search {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
 }
 .main_home_search form#searchform h1 {

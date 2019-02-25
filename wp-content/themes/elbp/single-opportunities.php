@@ -16,7 +16,7 @@
 			<div class="container Aligner">
 				<div class="col-sm-9 col-xs-12">
 					<h1><?php echo the_title();?></h1>
-					<h5><?php echo elbp_breadcrumbs(); ?></h5>
+					<!--<h5><?php echo elbp_breadcrumbs(); ?></h5>-->
 				</div>
 			</div>
 		</div>

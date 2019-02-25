@@ -30,7 +30,7 @@ $actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
 						<h1>I am looking for...</h1>
 						<label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
 						
-						<div class="col-md-3 col-sm-12 col-xs-12 select_home">
+						<!--<div class="col-md-3 col-sm-12 col-xs-12 select_home">
 							<select name="organisations_support[]" class="selectbox selectpicker" data-header="Support Options" multiple="multiple"  multiple title="Support Types...">
 								<option value="">All Types</option>
 		        				<?php 
@@ -46,10 +46,10 @@ $actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
 									}
 								?>
 							</select>
-						</div>
+						</div> -->
 						
-	        			<div class="col-md-3 col-sm-12 col-xs-12 select_home">
-							<select name="support_topics[]" class="selectbox selectpicker" data-header="Support Options" multiple="multiple" multiple title="Support Topics...">
+	        			<div class="col-md-4 col-sm-12 col-xs-12 select_home">
+							<select name="support_topics[]" class="selectbox selectpicker" data-header="Support Options" multiple="multiple" multiple title="Topics...">
 								<option value="">All Types</option>
 		        				<?php 
 								$terms = get_terms( array(
@@ -64,7 +64,7 @@ $actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
 								?>
 							</select>		        			
 	        			</div>
-	        			<div class="col-md-3 col-sm-12 col-xs-12 selectpicker select_home in">
+	        			<div class="col-md-4 col-sm-12 col-xs-12 selectpicker select_home in">
 		        				<?php 
 			        			$count= 0;
 								$terms = get_terms( array(

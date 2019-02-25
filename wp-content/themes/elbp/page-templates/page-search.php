@@ -244,6 +244,7 @@ $actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
 							
 								
 						</div>
+						<!--
 						<div class="form-group field_style">
 							<label class="main_labels">Support Type:</label>
 							<select name="organisations_support[]" class="selectbox selectpicker" data-header="Support Options" multiple="multiple">
@@ -267,16 +268,9 @@ $actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
 									}
 								?>
 							</select>
-							
-							
-							
-							
-							
-							
-							
-						</div>
+						</div> -->
 						<div class="form-group field_style">
-							<label class="main_labels">Support Topics:</label>
+							<label class="main_labels">Topics:</label>
 							<select name="support_topics[]" class="selectbox selectpicker" data-header="Support Options" multiple="multiple">
 								<option value="0">All Types</option>
 		        				<?php 

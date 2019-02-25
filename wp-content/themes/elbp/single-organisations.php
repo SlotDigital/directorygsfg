@@ -50,7 +50,7 @@ if(has_post_thumbnail()) {
 								}
 							?>
 					</div>
-					<h5><?php echo elbp_breadcrumbs(); ?></h5>
+					<!--<h5><?php echo elbp_breadcrumbs(); ?></h5>-->
 				</div>
 			</div>
 		</div>
