@@ -110,7 +110,7 @@ $actualurl = get_theme_info('theme_url').'/images/newImages/'.$end;
 							?>
 						</select> -->
 						
-						<div class="col-md-3 col-sm-12 col-xs-12">
+						<div class="col-md-4 col-sm-12 col-xs-12">
 	        				<input type="submit" class="form-control btn-block search-bx FadeIn" id="searchsubmit" value="search"/>
 						</div>
 						
